@@ -1,8 +1,13 @@
 import { Injectable } from '@angular/core';
+import { Feathers }   from '../core/Feathers';
 
 @Injectable()
-export class UsersService {
+export class UsersService extends Feathers{
 
-  constructor() { }
+  constructor() { 
+
+    //chama o metodo contrutor da classe pai
+    super('users', 'rest');
+  }
 
 }
