@@ -1,0 +1,10 @@
+.container {
+    height: 100vh;
+    position: relative;
+}
+
+.container section {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
